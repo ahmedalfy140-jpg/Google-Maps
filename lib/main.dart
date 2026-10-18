@@ -1,4 +1,7 @@
+
+
 import 'package:flutter/material.dart';
+import 'package:google_maps/presentaion/views/maps_views.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,22 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
     debugShowCheckedModeBanner: false,
   
-      home: Scaffold(
-appBar: AppBar(
-  title: Text('Google Maps'),
-  centerTitle: true,
-  backgroundColor:Colors.transparent,
-),
-        
-        body: 
-       
-        Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Center(child: Text('Google Maps'))
-          ],
-        ),
-      ),
+      home: MapView(),
      
       
      
